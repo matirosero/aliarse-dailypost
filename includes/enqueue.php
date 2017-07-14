@@ -32,5 +32,6 @@ function aliarse_theme_enqueue_styles() {
     wp_enqueue_style( 'aliarse-style',
         get_stylesheet_directory_uri() . '/assets/dist/css/style.css'
     );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i', false );
 }
 add_action( 'wp_enqueue_scripts', 'aliarse_theme_enqueue_styles' );
