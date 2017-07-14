@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// Import DailyPost Vendor CSS
+@import "vendors/bootstrap";
+@import "vendors/icomoon";
+
+/* ------------------------------------------------------------------
+ * [Table of contents]
+ *
+ * 1. Base Styling
+ * 2. WordPress Styles
+ * 3. Tables
+ * 4. Forms
+ * 5. Buttons
+ *
+ * 6. UI Components
+ * 		6.1. Header
+ * 		6.2. Footer
+ * 		6.3. Sections
+ * 		6.4. Components
+ *
+ * ------------------------------------------------------------------ */
+
+// Import DailyPost theme CSS
+@import "vendors/screen";
