@@ -10,3 +10,6 @@ function dailypost_parent_theme_enqueue_styles() {
     );
 
 }
+
+// Debug functions
+include( 'includes/debug.php' );
