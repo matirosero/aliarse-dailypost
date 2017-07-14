@@ -24,15 +24,13 @@ function mro_deregister_scripts() {
 	wp_deregister_style( 'tt-theme-style' );
 
 }
-// add_action( 'wp_enqueue_scripts', 'rhap_scripts' );
 add_action('wp_print_styles', 'mro_deregister_scripts', 99999);
 
 
-function mro_theme_enqueue_styles() {
-    // wp_enqueue_style( 'resume-style', get_template_directory_uri() . '/style.css' );
+function aliarse_theme_enqueue_styles() {
+    // wp_enqueue_style( 'dailypost-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'aliarse-style',
         get_stylesheet_directory_uri() . '/assets/dist/css/style.css'
     );
 }
-add_action( 'wp_enqueue_scripts', 'mro_theme_enqueue_styles' );
-
+add_action( 'wp_enqueue_scripts', 'aliarse_theme_enqueue_styles' );
