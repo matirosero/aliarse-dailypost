@@ -4,10 +4,23 @@
  */
 ?>
 
-<section class="box-no-spaces ovh vc_section"><!-- remove classes here -->
+<section class="blogfeed-section ovh"><!-- remove classes here -->
 	<div class="row">
 		<div class="wpb_column vc_column_container vc_col-sm-12">
 			<div class="vc_column-inner">
+
+				<div class="container-fluid">
+					<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator-has-text">
+						<span class="vc_sep_holder vc_sep_holder_l">
+							<span class="vc_sep_line"></span>
+						</span>
+						<h2>Tendencias mundiales</h2>
+						<span class="vc_sep_holder vc_sep_holder_r">
+							<span class="vc_sep_line"></span>
+						</span>
+					</div>
+				</div><!-- .container-fluid -->
+
 				<ul class="clean-list list-posts">
 
 					<?php

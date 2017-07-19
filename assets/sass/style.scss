@@ -30,6 +30,16 @@
 	background: yellow;
 }
 
+.blogfeed-section {
+	padding: 45px 0 50px;
+}
+//Heading with separator
+h2 {
+	.vc_separator & {
+		margin: 0;
+	}
+}
+
 /*
 Notes on style:
 .vc_section has horizontal padding and margin
