@@ -11,9 +11,8 @@
 
 							<div class="post-body">
 
-								<h3 class="post-title"><a href="//localhost:3000/galeria-con-muchas-fotos/">Galería con muchas fotos</a></h3>
-								<p class="post-excerpt">
-Lorem ipsum proin mi risus faucibus diam curabitur scelerisque, etiam porttitor a volutpa...</p>
+								<h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+								<p class="post-excerpt"><?php print tt_excerpt(get_the_ID(), 90);?></p>
 
 							</div><!-- .post-body -->
 						</div><!-- .col-md-8 -->
@@ -21,19 +20,20 @@ Lorem ipsum proin mi risus faucibus diam curabitur scelerisque, etiam porttitor 
 						<div class="col-md-2">
 							<div class="post-meta">
 								<ul class="post-categories clean-list">
-									<li class="category">
-										<a href="//localhost:3000/category/galeria/">Galería</a>
-									</li><!-- .category -->
+									<?php $terms = wp_get_post_terms( get_the_ID(), 'category');
+									foreach($terms as $term):?>
+									<li class="category"><a href="<?php echo get_category_link( $term->term_id);?>"><?php print $term->name;?></a></li>
+									<?php endforeach;?>
 								</ul><!-- .post-categories clean-list -->
 
-								<a class="post-author" href="//localhost:3000/author/webdev/">webdev</a>
+								<a class="post-author" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a>
 							</div><!-- .post-meta -->
 						</div><!-- .col-md-2 -->
 
 						<div class="col-md-2">
 							<div class="post-cover">
-								<a href="//localhost:3000/galeria-con-muchas-fotos/">
-									<img width="300" height="200" src="//localhost:3000/wp-content/uploads/2017/07/evento_28-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="//localhost:3000/wp-content/uploads/2017/07/evento_28-300x200.jpg 300w, //localhost:3000/wp-content/uploads/2017/07/evento_28-768x512.jpg 768w, //localhost:3000/wp-content/uploads/2017/07/evento_28.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px">
+								<a href="<?php the_permalink();?>">
+									<?php the_post_thumbnail('medium');?>
 								</a>
 							</div><!-- .post-cover -->
 						</div><!-- .col-md-2 -->
