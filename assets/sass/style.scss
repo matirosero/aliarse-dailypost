@@ -26,36 +26,8 @@
 // Import DailyPost theme CSS
 @import "dailypost/screen";
 
-.devbox {
-	background: yellow;
-}
+@import "base/layout";
 
-.col-centered {
-	margin: 0 auto;
-	float: none;
-}
+@import "base/type";
 
-.blogfeed-section {
-	padding: 45px 0 50px;
-}
-//Heading with separator
-h2 {
-	.vc_separator & {
-		margin: 0;
-	}
-}
-
-/*
-Notes on style:
-.vc_section has horizontal padding and margin
-.box-no-spages removes ALL padding and margin
-.ovh = overflow hidden
-
-.vc_column_container horizontal paddign 0
-.vc_col-* padding left right 20px
-
-.vc_column-inner border box and width 100%
-
-.clean-list reset list
-.list-posts NOTHING
-*/
+@import "shame";
