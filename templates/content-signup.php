@@ -17,9 +17,13 @@
 				<div class="vc_column-inner">
 					<div class="wpb_wrapper">
 						<form class="subscribe-form alignright " id="newsletter" method="post" data-tt-subscription="">
+							<?php
+							/*
 							<input type="text" name="email" class="form-input check-value" placeholder="Correo electrónico" data-tt-subscription-required="" data-tt-subscription-type="email">
 							<input type="submit" class="form-submit" value="Subscríbase">
 							<div class="result_container"></div>
+							*/ ?>
+							<?php echo do_shortcode( '[mc4wp_form id="546"]' ); ?>
 						</form><!-- .subscribe-form -->
 					</div><!-- .wpb_wrapper -->
 				</div><!-- .vc_column-inner -->
