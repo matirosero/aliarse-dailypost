@@ -1,0 +1,15 @@
+.events-section {
+	.tribe-events-page-title {
+		display: none;
+	}
+}
+
+.tribe-events-list-separator-month {
+	@include heading-style;
+	&:after {
+		border-bottom: 1px solid $border-color !important;
+	}
+	span {
+	    padding: 0 1em !important;
+	}
+}

@@ -1,0 +1,7 @@
+@mixin heading-style {
+  color: $heading-color;
+  margin: 0 0 0.5em;
+  font-weight: 700;
+  line-height: 1.35em;
+  font-family: "Montserrat", sans-serif;
+}

@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #262b2d;
+  color: $heading-color;
   margin: 0 0 0.5em;
   font-weight: 700;
   line-height: 1.35em;
@@ -3622,7 +3622,7 @@ img.mfp-img {
   line-height: 1em;
   overflow: hidden;
   max-width: 90%;
-  color: #262b2d;
+  color: $heading-color;
   font-size: 12px;
 }
 .post-with-more .post-list a:hover {
@@ -8383,7 +8383,7 @@ ul.page-numbers li a:hover {
 .single-post-area .related-posts .similar-post .post-title {
   line-height: 1.45em;
   font-weight: 500;
-  color: #262b2d;
+  color: $heading-color;
   margin: 0;
 }
 @media (max-width: 600px) {
@@ -8556,7 +8556,7 @@ ul.page-numbers li a:hover {
 }
 .sidebar-wrapper .sidebar .widget.widget_search .search-form .search-title-wrapper .search-title {
   margin: 0 0 25px;
-  color: #262b2d;
+  color: $heading-color;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.04em;
