@@ -19,6 +19,12 @@
 			<span class="hover-color" style="background-color: rgba(17, 138, 195, 0.5)"></span>
 		</div><!-- .post-cover -->
 
+		<div class="post-body">
+			<h2 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+			<p class="post-excerpt"><?php print tt_excerpt(get_the_ID(), 260);?></p>
+			<p class="post-author"><?php _e('by ','dailypost');?><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></p>
+		</div>
+		
 	</div><!-- .post featured-post small-featured-post -->
 	
 </div></div></div>

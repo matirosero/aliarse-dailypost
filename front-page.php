@@ -77,6 +77,6 @@ get_header();?>
 	endif; ?>
 	<!-- </div> --><!-- Extra closing div, mistake? -->
 	<div class="" style="width:100%; background:red; margin: 50px,0;">BELOW VC CONTENT</div>
-	<?php get_template_part( 'template-parts/content', 'galleryfeed' ); ?>
-	<?php get_template_part( 'template-parts/content', 'blogfeed' ); ?>
+	<?php get_template_part( 'templates/content', 'galleryfeed' ); ?>
+	<?php get_template_part( 'templates/content', 'blogfeed' ); ?>
 <?php get_footer();?>
