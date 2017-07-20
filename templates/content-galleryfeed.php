@@ -3,7 +3,7 @@
  * Shows gallery feed
  */
 ?>
-<section class="gallery-feed devbox" style="margin-top: 90px !important; margin-bottom: 40px !important;">
+<section class="gallery-feed" style="margin-top: 90px !important; margin-bottom: 40px !important;">
 	<div class="container-fluid clearfix ovh">
 
 		<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator-has-text">
