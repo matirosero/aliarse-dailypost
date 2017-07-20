@@ -6,15 +6,7 @@
 <section class="gallery-feed" style="margin-top: 90px !important; margin-bottom: 40px !important;">
 	<div class="container-fluid clearfix ovh">
 
-		<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator-has-text">
-			<span class="vc_sep_holder vc_sep_holder_l">
-				<span class="vc_sep_line"></span>
-			</span>
-			<h2>Galerías</h2>
-			<span class="vc_sep_holder vc_sep_holder_r">
-				<span class="vc_sep_line"></span>
-			</span>
-		</div>
+		<h2 class="section-title text-center"><span>Galerías</span></h2>
 
 		<div class="row">
 

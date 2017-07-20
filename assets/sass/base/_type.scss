@@ -4,3 +4,30 @@ h2 {
 		margin: 0;
 	}
 }
+
+.section-title {
+	text-transform: uppercase;
+    position:relative;
+    overflow:hidden;
+    margin-bottom: 35px;
+
+	&:before,&:after {
+	    content:" ";
+	    position:absolute;
+	    top:50%;
+	    margin-left:-999em;
+	    // height:1px;
+	    width:998em;
+	    border-top:1px solid $border-color;
+	    // background: $border-color;
+	}
+	&:after {
+	    left:auto;
+	    width:999em;
+	    margin:0 0 0 1em;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
