@@ -66,6 +66,7 @@
 					while ( $query->have_posts() ) : $query->the_post();
 
 						get_template_part( 'templates/content', 'blogfeed-post' );
+						// include(locate_template('templates/content-blogfeed-post.php'));
 
 					endwhile;
 

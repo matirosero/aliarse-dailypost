@@ -3,6 +3,21 @@
 }
 
 
+.break-sm {
+
+	@media (min-width: 992px) {
+		display: none;
+	}
+}
+
+.break-md,
+.break-lg {
+	display: none;
+	@media (min-width: 992px) {
+		display: block;
+	}
+}
+
 
 
 /*

@@ -61,15 +61,19 @@
 
 			while ( $query->have_posts() ) : $query->the_post();
 
-				// get_template_part( 'templates/content', 'galleryfeed-post' );
 
-				// get_template_part( 'templates/content', 'medium' );
 				get_template_part( 'templates/content', 'small' );
 
+				// include(locate_template('templates/content-small.php'));
 
-				if ($i !== 0 && $i % 3 == 0) :
-					// echo '<div class="clearfix visible-md-block"></div>';
-				endif;
+
+				if ($i !== 0 && $i % 2 == 0) : ?>
+					<div class="col-xs-12 break-sm"></div>
+				<?php
+				elseif ($i !== 0 && $i % 3 == 0) : ?>
+					<div class="col-xs-12 break-md"></div>
+				<?php endif;
+
 
 
 				$i++;
