@@ -5,3 +5,47 @@
   line-height: 1.35em;
   font-family: "Montserrat", sans-serif;
 }
+
+@mixin button-style {
+    -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.1em;
+    background: $blue;
+    border-radius: 25px;
+    padding: 11px 26px;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff !important;
+    &:hover {
+    	-webkit-box-shadow: 5px 3px 10px rgba(31,46,57,0.2);
+	    box-shadow: 5px 3px 10px rgba(31,46,57,0.2);
+	    background: #2aacfd;
+    }
+}
+
+@mixin link-style {
+  text-decoration: none;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+  border-bottom: 1px solid transparent;
+  color: $blue;	
+  font-weight: bold;
+  &:hover {
+  	border-color: #005CA9;
+  }
+}
+
+@mixin heading-link {
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+  color: $heading-color !important;
+  &:hover {
+  	color: $blue !important;
+  }
+}

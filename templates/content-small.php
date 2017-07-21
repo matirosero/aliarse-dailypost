@@ -17,6 +17,7 @@
 			<h4 class="post-title">
 				<a href="<?php the_permalink();?>"><?php the_title();?></a>
 			</h4>
+			<h2>#<?php echo $i; ?></h2>
 			<p class="post-excerpt"><?php print tt_excerpt(get_the_ID(), 100);?></p>
 			<p class="post-author"><?php _e('by ','dailypost');?><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></p>
 		</div>
