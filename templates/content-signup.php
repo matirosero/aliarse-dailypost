@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<section class="vc_section vc_custom_1500069915146">
+<section class="signup-section">
 	<div class="container-fluid clearfix ovh">
 		<div class="row">
 			<div class="col-sm-6 col-lg-offset-1 col-lg-5">
