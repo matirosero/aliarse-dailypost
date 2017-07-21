@@ -1,0 +1,28 @@
+.mro-signup-section {
+	text-align: center;
+}
+.signup-heading {
+	padding-top: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.mro-signup-form {
+	position: relative;
+    font-size: 0;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+
+    input[type=email] {
+    	margin-bottom: 15px;
+    }
+}
+
+
+// .mc4wp-alert 
+
+.mc4wp-success {
+	color: $white;
+}
