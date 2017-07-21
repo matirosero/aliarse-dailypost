@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<section class="signup-section">
+<section class="mro-signup-section">
 	<div class="container-fluid clearfix ovh">
 		<div class="row">
 			<div class="col-sm-6 col-lg-offset-1 col-lg-5">

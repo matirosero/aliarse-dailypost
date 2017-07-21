@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="events-section" style="margin-top: 90px !important; margin-bottom: 40px !important;">
+<section class="mro-events-section">
 	<div class="container-fluid clearfix ovh">
 		<h2 class="section-title text-center">Próximas capacitaciones</h2>
 		<div class="row row-centered">

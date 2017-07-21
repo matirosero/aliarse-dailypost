@@ -19,6 +19,7 @@
     line-height: 1em;
     font-weight: 300;
     font-size: 13px;
+    font-family: "Montserrat", sans-serif;
     color: #fff !important;
     &:hover {
     	-webkit-box-shadow: 5px 3px 10px rgba(31,46,57,0.2);
@@ -48,4 +49,9 @@
   &:hover {
   	color: $blue !important;
   }
+}
+
+@mixin section-margin {
+  margin-top: 90px;
+  margin-bottom: 40px;
 }

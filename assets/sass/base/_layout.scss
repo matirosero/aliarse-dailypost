@@ -3,15 +3,30 @@
 	float: none;
 }
 
-.signup-section {
-	padding-top: 25px !important;
-    padding-bottom: 18px !important;
-    background-image: url(//localhost:3000/wp-content/uploads/2015/11/horizontal-bar-bg-green.jpg?id=508) !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+// [class$="section"]:not([attribute^="value"]) {
+[class^="mro"][class$="section"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
-.blogfeed-section {
-	padding: 45px 0 50px;
+
+.mro-signup-section {
+	padding-top: 25px;
+    padding-bottom: 18px;
+    background-image: url(/wp-content/uploads/2015/11/horizontal-bar-bg-green.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mro-gallery-section {
+	@include section-margin;
+}
+
+.mro-blogfeed-section {
+	@include section-margin;
+
+    padding-bottom: 50px; //If there is no pagination
 }

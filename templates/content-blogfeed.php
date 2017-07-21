@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="blogfeed-section ovh"><!-- remove classes here -->
+<section class="mro-blogfeed-section"><!-- HAD OVH don't know if need -->
 	<div class="row">
 		<div class="wpb_column vc_column_container vc_col-sm-12">
 			<div class="vc_column-inner">

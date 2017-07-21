@@ -3,7 +3,7 @@
  * Shows gallery feed
  */
 ?>
-<section class="gallery-section" style="margin-top: 90px !important; margin-bottom: 40px !important;">
+<section class="mro-gallery-section" style="margin-top: 90px !important; margin-bottom: 40px !important;">
 	<div class="container-fluid clearfix ovh">
 
 		<h2 class="section-title text-center">Galerías</h2>
