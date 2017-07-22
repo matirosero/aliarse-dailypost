@@ -191,16 +191,16 @@
                                 <div class="breaking-news">
                                     <?php 
                                         $posts_query = new WP_Query(array(
-                                            'post_type' => 'post',
+                                            'post_type' => 'newsticker',
                                             'orderby' => 'date',
                                             'order' => 'ASC',
-                                            'meta_query' => array(
-                                                array(
-                                                    'key' => THEME_NAME.'_hot_news',
-                                                    'value' => 'on',
-                                                    'compare' => 'LIKE',
-                                                ),
-                                            )
+                                            // 'meta_query' => array(
+                                            //     array(
+                                            //         'key' => THEME_NAME.'_hot_news',
+                                            //         'value' => 'on',
+                                            //         'compare' => 'LIKE',
+                                            //     ),
+                                            // )
                                         ));
                                     ?>
                                     <?php if($posts_query->have_posts()):?>
@@ -208,7 +208,7 @@
                                     <p class="block-body marquee">
                                         <?php while($posts_query->have_posts()) : $posts_query->the_post();
                                            tt_excerpt(get_the_ID(), 80);
-                                           echo '<a href="'.get_the_permalink(get_the_ID()).'">'.__('read more','dailypost').'</a>  ';
+                                           // echo '<a href="'.get_the_permalink(get_the_ID()).'">'.__('read more','dailypost').'</a>  ';
                                         endwhile; ?>
                                     </p>
                                     <?php endif; wp_reset_postdata(); ?>
