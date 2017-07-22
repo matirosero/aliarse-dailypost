@@ -5,7 +5,7 @@
 get_header();?>
 
 	<!-- Main Content -->
-	<div class="" style="width:100%; background:red; margin: 50px,0;">ABOVE VC CONTENT</div>
+	
 	<?php
 	if ( have_posts() ) :
 		while ( have_posts() ) : the_post();
@@ -76,7 +76,7 @@ get_header();?>
 		endwhile;
 	endif; ?>
 	<!-- </div> --><!-- Extra closing div, mistake? -->
-	<div class="" style="width:100%; background:red; margin: 50px,0;">BELOW VC CONTENT</div>
+	<!-- <div class="" style="width:100%; background:red; margin: 50px,0;">BELOW VC CONTENT</div> -->
 	<?php get_template_part( 'templates/content', 'signup' ); ?>
 	<?php get_template_part( 'templates/content', 'galleryfeed' ); ?>
 	<?php get_template_part( 'templates/content', 'eventsview' ); ?>
