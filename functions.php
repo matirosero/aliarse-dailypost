@@ -15,8 +15,10 @@ function child_theme_slug_setup() {
 }
 add_action( 'after_setup_theme', 'child_theme_slug_setup' );
 
+include( 'includes/mro-theme-support.php' );
 
 // MRo template tags
 include( 'includes/mro-template-tags.php' );
 
 include( 'includes/mro-widgets.php' );
+
