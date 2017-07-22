@@ -18,3 +18,5 @@ add_action( 'after_setup_theme', 'child_theme_slug_setup' );
 
 // MRo template tags
 include( 'includes/mro-template-tags.php' );
+
+include( 'includes/mro-widgets.php' );

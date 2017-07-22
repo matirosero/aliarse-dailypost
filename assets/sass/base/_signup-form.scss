@@ -9,20 +9,74 @@
     color: #ffffff;
 }
 
-.mro-signup-form {
-	position: relative;
-    font-size: 0;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 20px;
 
-    input[type=email] {
-    	margin-bottom: 15px;
-    }
-}
 
 
 // .mc4wp-alert 
 
 .mc4wp-success {
 	color: $white;
+}
+
+
+.result_container {
+  position: absolute;
+  top: 10px;
+  right: 178px;
+  color: #F0686D;
+  font-size: 9px;
+}
+// .subscribe-form,
+.mro-signup-form {
+  position: relative;
+  font-size: 0;
+  font-family: "Montserrat", sans-serif;
+  input {
+	  display: inline-block;
+	  border-radius: 25px;
+	  margin: 0 10px 15px;//
+	  text-align: center; //
+  }
+  .form-input {
+	  -webkit-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	  -moz-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	  
+	  padding: 9px 30px;
+	  font-size: 13px;
+	  color: #8d969a;
+	  width: 240px;
+		&::-webkit-input-placeholder {
+		  color: #bebebe;
+		}
+		&:-moz-placeholder {
+		  color: #bebebe;
+		}
+		&.placeholder {
+		  color: #bebebe;
+		}
+		&:focus, 
+		&.has-value {
+		  width: 300px;
+		}
+	}
+	.form-submit {
+	  color: #fff;
+	  font-size: 14px;
+	  min-width: 150px;
+	  line-height: 1em;
+	  background: $blue;
+	  text-align: center;
+	  padding: 13px 25px;
+	  letter-spacing: 0.1em;
+	  text-transform: uppercase;
+	  -webkit-transition: all 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	  -moz-transition: all 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	  transition: all 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+		&:hover {
+		  -webkit-box-shadow: -5px 3px 10px rgba(31, 46, 57, 0.2);
+		  box-shadow: -5px 3px 10px rgba(31, 46, 57, 0.2);
+		  background: #2aacfd;
+		}
+	}
 }
