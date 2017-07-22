@@ -1,5 +1,5 @@
             <!-- Footer -->
-            <footer>
+            <footer class="site-footer">
                 <!-- Widgets Area -->
                 <div class="container-fluid">
                     <div class="row">
