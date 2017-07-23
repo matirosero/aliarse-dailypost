@@ -11,7 +11,15 @@
 
 							<div class="post-body">
 
-								<h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+								<?php 
+								$link = get_post_meta( $post->ID, 'post_link', true );
+
+								if( $link ): ?>
+									<h3 class="post-title"><a href="<?php echo $link;?>"><?php the_title();?></a></h3>
+								<?php else: ?>
+									<h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+								<?php endif; ?>
+
 								<p class="post-excerpt"><?php print mro_excerpt(get_the_ID(), 90);?></p>
 
 							</div><!-- .post-body -->
