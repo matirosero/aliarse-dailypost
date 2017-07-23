@@ -15,7 +15,7 @@ $i = 1;
 		<?php if($sidebar == "full_width"):?>
 		<div class="breadcrumbs">
 			<div class="container-fluid">
-				<h2>
+				<h2 class="section-title text-center">
 				<?php if (is_category()) { ?> <?php _e("You're browsing category: ", 'dailypost'); ?> <span><?php single_cat_title(); ?></span>
 		        <?php } elseif( is_tag() ) { ?><?php _e('Post Tagged with:', 'dailypost'); ?> <span>"<?php single_tag_title(); ?>"</span>
 		        <?php } elseif (is_day()) { ?><?php _e('Archive for', 'dailypost'); ?> <span><?php the_time('F jS, Y'); ?></span>
