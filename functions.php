@@ -6,6 +6,7 @@ include( 'includes/debug.php' );
 // Enqueue and dequeue
 include( 'includes/mro-enqueue.php' );
 
+include( 'includes/mro-acf.php' );
 
 /*
  * Load translation in child theme
