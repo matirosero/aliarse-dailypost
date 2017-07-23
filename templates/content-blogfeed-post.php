@@ -40,9 +40,16 @@
 
 						<div class="col-md-2">
 							<div class="post-cover">
-								<a href="<?php the_permalink();?>">
-									<?php the_post_thumbnail('medium');?>
-								</a>
+								<?php
+								if( $link ): ?>
+									<a href="<?php echo $link;?>">
+										<?php the_post_thumbnail('medium');?>
+									</a>
+								<?php else: ?>
+									<a href="<?php the_permalink();?>">
+										<?php the_post_thumbnail('medium');?>
+									</a>
+								<?php endif; ?>
 							</div><!-- .post-cover -->
 						</div><!-- .col-md-2 -->
 
