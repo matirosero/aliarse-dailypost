@@ -23,3 +23,5 @@ include( 'includes/mro-template-tags.php' );
 
 include( 'includes/mro-widgets.php' );
 
+include( 'includes/mro-menus.php' );
+

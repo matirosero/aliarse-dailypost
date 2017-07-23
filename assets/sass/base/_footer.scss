@@ -5,9 +5,9 @@
 			box-sizing: border-box;
 			ul {
 				li {
-					display: inline-block;
-					vertical-align: top;
-				    width: 49%;
+					display: block;
+				    width: auto;
+				    margin-bottom: 0.75em;
 				}
 			}
 		}		

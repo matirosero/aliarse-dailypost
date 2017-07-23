@@ -13,11 +13,33 @@
                                         dynamic_sidebar('footer_widget_left'); 
                                         echo '</div>';
                                     endif; ?>
-                                   <?php if( is_active_sidebar( 'footer_widget_right' )) :
-                                        echo '<div class="col-md-8">';
-                                        dynamic_sidebar('footer_widget_right'); 
-                                        echo '</div>';
-                                    endif; ?>
+                                    <div class="col-md-8">
+                                        <div class="widget widget_nav_menu">
+                                            <h4 class="widget-title">Enlaces</h4>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <?php wp_nav_menu( array( 
+                                                        'title_li'=>'',
+                                                        'theme_location' => 'footer_menu_1',
+                                                        'container' => false,
+                                                        // 'items_wrap' => '%3$s',
+                                                        'fallback_cb' => 'wp_list_pages'
+                                                        ));
+                                                    ?>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <?php wp_nav_menu( array( 
+                                                        'title_li'=>'',
+                                                        'theme_location' => 'footer_menu_2',
+                                                        'container' => false,
+                                                        // 'items_wrap' => '%3$s',
+                                                        'fallback_cb' => 'wp_list_pages'
+                                                        ));
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
