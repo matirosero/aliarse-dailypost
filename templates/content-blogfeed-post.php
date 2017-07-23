@@ -12,7 +12,7 @@
 							<div class="post-body">
 
 								<h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-								<p class="post-excerpt"><?php print tt_excerpt(get_the_ID(), 90);?></p>
+								<p class="post-excerpt"><?php print mro_excerpt(get_the_ID(), 90);?></p>
 
 							</div><!-- .post-body -->
 						</div><!-- .col-md-8 -->
