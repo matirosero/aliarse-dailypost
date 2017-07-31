@@ -1,3 +1,28 @@
+header .main-header-wrapper {
+    .main-nav {
+        border-top: 1px solid #dce0e2;
+        margin-top: 10px;
+        padding-top: 30px;
+    }
+    .breaking-news {
+        border-bottom: 0;
+        padding: 22.5px 0 2.5px 205px;
+        min-height: 30px;
+    }
+    .main-social-block {
+        margin: 10px 0 0;
+        .social-platforms {
+            padding: 10px 0 10px;
+        }
+    }
+    @media (max-width: $screen-sm-max) {
+        .main-social-block {
+            border-left: 0;
+        }
+    }
+}
+
+
 .col-centered {
 	margin: 0 auto;
 	float: none;
