@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DailyPost\n"
-"POT-Creation-Date: 2017-07-28 18:21-0600\n"
-"PO-Revision-Date: 2017-07-28 18:23-0600\n"
+"POT-Creation-Date: 2017-07-31 16:30-0600\n"
+"PO-Revision-Date: 2017-07-31 16:37-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -118,15 +118,15 @@ msgstr "cerrar"
 msgid "Search"
 msgstr "Buscar"
 
-#: header.php:207
+#: header.php:209
 msgid "Alianzas en cifras"
 msgstr ""
 
-#: header.php:249
+#: header.php:234
 msgid "Facebook"
 msgstr ""
 
-#: header.php:268
+#: header.php:253
 msgid "Twitter"
 msgstr ""
 

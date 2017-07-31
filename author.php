@@ -36,7 +36,7 @@ $i = 1;
 							<div class="user-meta">
 								<h3 class="name"><?php print $curauth->display_name;?></h3>
 
-								<span class="nr-of-posts"><?php print count_user_posts($curauth->ID, 'post');?> <?php _e('posts','dailypost');?></span>
+								<span class="nr-of-posts"><?php print count_user_posts($curauth->ID, 'post');?> <?php _e('artículos','dailypost');?></span>
 								<ul class="social-block clean-list">
 									<?php foreach($social_platforms as $platform):
 				                        if (get_the_author_meta( $platform, $curauth->ID )):
@@ -63,7 +63,7 @@ $i = 1;
 						<?php $userposts = get_posts('showposts=-1&author='.$curauth->ID); ?>
 						<?php if($userposts):?>
 						<div class="author-categories align-center">
-							<h5><?php _e('I write about','dailypost');?></h5>
+							<h5><?php _e('Escribo sobre','dailypost');?></h5>
 							<?php
 								$i = 0;
 								$cats = array();	

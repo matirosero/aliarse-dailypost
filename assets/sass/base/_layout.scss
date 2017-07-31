@@ -60,6 +60,16 @@ header .main-header-wrapper {
     padding-bottom: 50px; //If there is no pagination
 }
 
+.author-box {
+    max-width: 450px;
+    .user-meta {
+        min-width: 200px;
+        .nr-of-posts {
+            max-width: 280px;
+        }
+    }
+
+}
 
 // .post-categories {
 //     padding: 45px 0 0 20px;        

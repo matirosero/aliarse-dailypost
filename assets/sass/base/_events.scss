@@ -1,5 +1,10 @@
+#tribe-events-bar {
+		display: none;
+	}
+
 .mro-events-section {
-	.tribe-events-page-title {
+	.tribe-events-page-title,
+	#tribe-events-bar {
 		display: none;
 	}
 }

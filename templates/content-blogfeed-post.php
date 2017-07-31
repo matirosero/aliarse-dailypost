@@ -34,7 +34,10 @@
 									<?php endforeach;?>
 								</ul><!-- .post-categories clean-list -->
 
+								<?php
+								/*
 								<a class="post-author" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a>
+								*/ ?>
 							</div><!-- .post-meta -->
 						</div><!-- .col-md-2 -->
 
