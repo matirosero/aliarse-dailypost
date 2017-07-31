@@ -46,6 +46,10 @@ header .main-header-wrapper {
     background-size: cover;
 }
 
+.mro-events-section {
+    @include section-margin;
+}
+
 .mro-gallery-section {
 	@include section-margin;
 }
