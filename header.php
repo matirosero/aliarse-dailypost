@@ -187,7 +187,7 @@
                                 </a>
                             </div>
 
-                            <div class="col-md-8 col-lg-7">
+                            <div class="col-md-10 col-lg-10">
                                 <div class="breaking-news">
                                     <?php 
                                         $posts_query = new WP_Query(array(
@@ -231,49 +231,7 @@
                                 </nav>
                             </div>
 
-                            <div class="col-md-2 col-lg-3">
-                                <div class="main-social-block">
-                                    <ul class="social-platforms clean-list">
-                                        <?php if(_go('head_platforms_facebook')):
-                                            $trans_f = get_transient('head_platforms_facebook');
-                                            if(!empty($trans_f)) {
-                                                $count_f = $trans_f;
-                                            } else {
-                                                $facebook = wp_remote_retrieve_body( wp_remote_get('https://graph.facebook.com/'._go('head_platforms_facebook').'?access_token=802909029854829|04f9921c0fd17bbfa1f82037ee9581ac&fields=likes', array('timeout'=> 5)));
-                                                $likes = json_decode($facebook);
-                                                $count_f = !empty($likes->likes) ? $likes->likes : 0;
-                                                set_transient('head_platforms_facebook', $count_f, 5 * HOUR_IN_SECONDS);
-                                            }
-                                        ?>
-                                        <li class="platform align-center">  
-                                            <span class="title"><?php _e('Facebook','dailypost');?></span>
-                                            <a href="http://facebook.com/<?php _eo('head_platforms_facebook');?>" target="_blank" class="facebook">
-                                                <span class="counter"><?php echo $count_f;?></span>
-                                            </a>
-                                        </li>
-                                        <?php endif;?>
 
-                                        <?php if(_go('head_platforms_twitter')):
-                                            $trans_t = get_transient('head_platforms_twitter');
-                                            if(!empty($trans_t)) {
-                                                $count_t = $trans_t;
-                                            } else {
-                                                $twitter = wp_remote_retrieve_body( wp_remote_get('https://cdn.syndication.twimg.com/widgets/followbutton/info.json?screen_names='._go('head_platforms_twitter'), array('timeout'=> 5)));
-                                                $followers = json_decode($twitter);
-                                                $count_t = !empty($followers[0]->followers_count) ? $followers[0]->followers_count : 0;
-                                                set_transient('head_platforms_twitter', $count_t, 5 * HOUR_IN_SECONDS);
-                                            }
-                                        ?>
-                                         <li class="platform align-center">
-                                            <span class="title"><?php _e('Twitter','dailypost');?></span>
-                                            <a href="http://twitter.com/<?php _eo('head_platforms_twitter');?>" target="_blank" class="twitter">
-                                                <span class="counter"><?php echo $count_t;?></span>
-                                            </a>
-                                        </li>
-                                        <?php endif;?>  
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

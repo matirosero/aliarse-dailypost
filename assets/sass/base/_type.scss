@@ -5,6 +5,12 @@ h2 {
 	}
 }
 
+header .main-header-wrapper .main-nav ul li {
+  text-transform: none;
+  margin: 0 25px 0 0;
+  // font-weight: 400;
+}
+
 .section-title {
 	text-transform: uppercase;
     position:relative;
