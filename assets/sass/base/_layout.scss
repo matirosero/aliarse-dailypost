@@ -58,6 +58,21 @@ header .main-header-wrapper {
 	@include section-margin;
 
     padding-bottom: 50px; //If there is no pagination
+
+    .post-cover a {
+        display: block;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
 }
 
 .author-box {
