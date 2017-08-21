@@ -40,3 +40,9 @@ function excerpt_count_js(){
 }
 add_action( 'admin_head-post.php', 'excerpt_count_js');
 add_action( 'admin_head-post-new.php', 'excerpt_count_js');
+
+
+function mro_get_cutoff() {
+	$cutoff = get_field('home_start_date', 'option', false, false);
+	return $cutoff;
+}

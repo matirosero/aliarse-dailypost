@@ -192,17 +192,14 @@
                                     <div class="col-md-9 col-lg-10">
                                         <div class="breaking-news">
                                             <?php 
+                                                $cutoff = mro_get_cutoff();
                                                 $posts_query = new WP_Query(array(
                                                     'post_type' => 'newsticker',
                                                     'orderby' => 'date',
                                                     'order' => 'ASC',
-                                                    // 'meta_query' => array(
-                                                    //     array(
-                                                    //         'key' => THEME_NAME.'_hot_news',
-                                                    //         'value' => 'on',
-                                                    //         'compare' => 'LIKE',
-                                                    //     ),
-                                                    // )
+                                                    'date_query'     => array(
+                                                        'after' =>  $cutoff,
+                                                    ),
                                                 ));
                                             ?>
                                             <?php if($posts_query->have_posts()):?>

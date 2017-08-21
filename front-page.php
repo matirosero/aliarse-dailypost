@@ -1,11 +1,11 @@
-<?php 
+<?php
 /**
  *  Page Template
  */
 get_header();?>
 
 	<!-- Main Content -->
-	
+
 	<?php
 	if ( have_posts() ) :
 		while ( have_posts() ) : the_post();
@@ -13,7 +13,7 @@ get_header();?>
 			if(has_shortcode( get_the_content(), 'vc_row' ) && class_exists('Vc_Manager')):
 				if(is_front_page() && get_query_var('page') > 1 && has_shortcode( get_the_content(), 'tt_blog_list')) {
 					$matches = array();
-					preg_match_all('/\[tt_blog_list(.*?)\]/', get_the_content(), $matches); 
+					preg_match_all('/\[tt_blog_list(.*?)\]/', get_the_content(), $matches);
 					?>
 					<div class="content-wrapper no-padding">
 						<section class="list-posts-section index">
@@ -24,7 +24,7 @@ get_header();?>
 				} else {
 					the_content();
 				}
-			else: 
+			else:
 				$sidebar = get_post_meta( tt_get_page_id(), THEME_NAME . '_sidebar_position', true );
 				$sidebar = $sidebar ? $sidebar : 'right';
 			?>
