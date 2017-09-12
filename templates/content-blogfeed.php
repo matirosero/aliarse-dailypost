@@ -18,7 +18,7 @@
 				<ul class="clean-list list-posts">
 
 					<?php
-					$cutoff = mro_get_cutoff();
+					// $cutoff = mro_get_cutoff();
 					$cat_name = 'tendencias-mundiales';
 					$posts_per_page = 2;
 
@@ -35,9 +35,9 @@
 						//Order & Orderby Parameters
 						'order'               => 'DESC',
 						'orderby'             => 'date',
-					    'date_query'     => array(
-					        'after' =>  $cutoff,
-					    ),
+					    // 'date_query'     => array(
+					    //     'after' =>  $cutoff,
+					    // ),
 
 						//Pagination Parameters
 						'posts_per_page'         => $posts_per_page,
