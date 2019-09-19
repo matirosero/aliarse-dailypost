@@ -46,3 +46,10 @@ function mro_get_cutoff() {
 	$cutoff = get_field('home_start_date', 'option', false, false);
 	return $cutoff;
 }
+
+//hide visual composer stuff
+function mro_filter_plugin_updates( $value ) {
+    unset( $value->response['js_composer/js_composer.php'] );
+    return $value;
+}
+add_filter( 'site_transient_update_plugins', 'mro_filter_plugin_updates' );

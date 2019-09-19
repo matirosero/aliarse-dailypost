@@ -175,7 +175,7 @@
                     <!-- Main Header content -->
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-2 col-lg-2">
+                            <div class="col-md-3 col-lg-3">
                                 <a class="site-identity" href="<?php echo home_url(); ?>" style="<?php _estyle_changer('logo_text') ?>" >
                                     <?php if(_go('logo_image')): ?>
                                         <img src="<?php _eo('logo_image') ?>" alt="<?php echo THEME_PRETTY_NAME ?>">
@@ -187,27 +187,28 @@
                                 </a>
                             </div>
 
-                            <div class="col-md-10 col-lg-10">
+                            <div class="col-md-9 col-lg-9">
                                 <div class="row">
                                     <div class="col-md-9 col-lg-10">
-                                        <div class="breaking-news">
+                                        <div class="news-banner" style="margin-top:10px;">
                                             <?php 
                                                 // $cutoff = mro_get_cutoff();
                                                 $posts_query = new WP_Query(array(
-                                                    'post_type' => 'newsticker',
+                                                    'post_type' => 'banner',
                                                     'orderby' => 'date',
                                                     'order' => 'ASC',
+                                                    'posts-per-page' => 1,
+                                                    'meta_query' => array(array('key' => '_thumbnail_id')) 
                                                     // 'date_query'     => array(
                                                     //     'after' =>  $cutoff,
                                                     // ),
                                                 ));
                                             ?>
                                             <?php if($posts_query->have_posts()):?>
-                                            <span class="block-title"><?php _e('Alianzas en cifras','dailypost');?></span>
-                                            <p class="block-body marquee">
+                                            
                                                 <?php while($posts_query->have_posts()) : $posts_query->the_post();
-                                                   tt_excerpt(get_the_ID(), 80);
-                                                   // echo '<a href="'.get_the_permalink(get_the_ID()).'">'.__('read more','dailypost').'</a>  ';
+                                                   
+                                                    the_post_thumbnail( 'full' );
                                                 endwhile; ?>
                                             </p>
                                             <?php endif; wp_reset_postdata(); ?>
@@ -230,7 +231,7 @@
                                                 <li class="platform align-center">  
                                                     <span class="title"><?php _e('Facebook','dailypost');?></span>
                                                     <a href="http://facebook.com/<?php _eo('head_platforms_facebook');?>" target="_blank" class="facebook">
-                                                        <span class="counter"><?php echo $count_f;?></span>
+                                                        <span class="counter"><?php //echo $count_f;?></span>
                                                     </a>
                                                 </li>
                                                 <?php endif;?>

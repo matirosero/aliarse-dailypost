@@ -79,6 +79,6 @@ get_header();?>
 	<!-- <div class="" style="width:100%; background:red; margin: 50px,0;">BELOW VC CONTENT</div> -->
 	<?php get_template_part( 'templates/content', 'signup' ); ?>
 	<?php //get_template_part( 'templates/content', 'galleryfeed' ); ?>
-	<?php get_template_part( 'templates/content', 'eventsview' ); ?>
+	<?php //get_template_part( 'templates/content', 'eventsview' ); ?>
 	<?php get_template_part( 'templates/content', 'blogfeed' ); ?>
 <?php get_footer();?>
